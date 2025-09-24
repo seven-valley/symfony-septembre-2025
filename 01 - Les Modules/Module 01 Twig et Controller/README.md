@@ -9,11 +9,26 @@
 ```
 symfony console make:controller MainController
 ```
-:three: Création de template avec twig et les <code>block</code>
+:three: Création de template avec twig et les <code>block</code> & <code>extends</code>
 ```twig
 <title>{% block title %}Mon site web{% endblock %}</title>
 ```
 :four: Mise en place des liens
 ```twig
     <a href="{{ path('app_main')}}">main</a>
+```
+
+:five: Mise en place des assets
+```twig
+  <link rel="stylesheet" href="{{asset('styles/styles.css')}}">   
+```
+
+:six: Afficher un tableau
+```twig
+{# dump(personnes) #}
+
+{% for personne in personnes %}
+   {{loop.index}}
+   {{personne.prenom}}  {{personne.nom}} <br> 
+{% endfor %}
 ```
