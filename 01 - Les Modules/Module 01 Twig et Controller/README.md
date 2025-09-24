@@ -3,9 +3,9 @@
 
 :one: Création d'un projet
 ```
-:two: symfony new premier --webapp
+ symfony new premier --webapp
 ```
-- Création d'un controller avec les maker
+:two: Création d'un controller avec les maker
 ```
 symfony console make:controller MainController
 ```
