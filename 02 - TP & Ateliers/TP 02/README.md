@@ -1,33 +1,33 @@
 # TP 02
 
-•	Configurer la base de données dans le fichier .env.local  
-•	Créer la base de données avec **phpMyAdmin**
-•	S'assurer que l'interclassement de la base de donnée est en UTF8 dans PHPMyAdmin  
-•	Générer l'entité Wish avec make dans l'invite de commande, avec les propriétés demandées  
-•	Mettre à jour la base de données avec <code>doctrine:schema:update –force</code>
-•	Dans WishController, dans la méthode list :   
-       o	Récupérer les idées avec la méthode <code>$repo->findBy()</code>  
-       o	Passer les idées à Twig avec le 2e argument de la fonction render()  
+-	Configurer la base de données dans le fichier .env.local  
+-	Créer la base de données avec **phpMyAdmin**
+-	S'assurer que l'interclassement de la base de donnée est en UTF8 dans PHPMyAdmin  
+-	Générer l'entité Wish avec make dans l'invite de commande, avec les propriétés demandées  
+-	Mettre à jour la base de données avec <code>doctrine:schema:update -force</code>
+-	Dans WishController, dans la méthode list :   
+  -	Récupérer les idées avec la méthode <code>$repo->findBy()</code>  
+  - Passer les idées à Twig avec le 2e argument de la fonction render()  
     
-•	Dans list.html.twig :  
+-	Dans <code>list.html.twig</code> :  
   o	utiliser une boucle pour afficher les idées une par une  
   o	ajouter une balise <a> autours de chaque idée, menant à la page détails  
-  o	pour générer la bonne URL dans le href, utiliser la fonction path() avec ses 2 arguments  
-•	Dans WishController, dans la méthode detail :   
+  o	pour générer la bonne URL dans le href, utiliser la fonction <code>path()</code> avec ses 2 arguments  
+-	Dans WishController, dans la méthode detail :   
   o	Récupérer l'idée en fonction de son identifiant avec la méthode $repo->find()  
   o	Passer l'idée à Twig  
-•	Dans detail.html.twig :   
+-	Dans <code>detail.html.twig</code> :   
   o	Inutile de faire une boucle  
   o	Afficher tous les détails de l'idée  
 
 # Détails de la  base
 Il ne manque plus que des idées de choses à faire avant de mourir à ce site ! Il est maintenant temps de créer l'entité qui représente une idée. Cette entité (nommée Wish) doit avoir les propriétés suivantes : 
     
-•	**title** (l'idée en tant que telle, 250 caractères max. Requis.)  
-•	**description** (texte suivi décrivant l'idée plus en détail)  
-•	**author** (pseudo de l'auteur. 50 caractères max. Requis.)  
-•	**isPublished** (valeur booléenne indiquant si l'idée est actuellement visible sur le site)  
-•	**dateCreated** (date et heure de création de l'idée)  
+-	**title** (l'idée en tant que telle, 250 caractères max. Requis.)  
+-	**description** (texte suivi décrivant l'idée plus en détail)  
+-	**author** (pseudo de l'auteur. 50 caractères max. Requis.)  
+-	**isPublished** (valeur booléenne indiquant si l'idée est actuellement visible sur le site)  
+-	**dateCreated** (date et heure de création de l'idée)  
 Configurez votre connexion à la base de données, créez-la et mettez-la à jour.  
   
 Directement dans PHPMyAdmin, ajoutez 3 ou 4 idées, pour tester OU mieux, créez-vous une nouvelle route dans le WishController, et créez-y quelques instances de Wish avant de les sauvegarder avec l’EntityManager.   
