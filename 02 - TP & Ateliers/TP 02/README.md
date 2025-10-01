@@ -6,8 +6,8 @@
 •	Générer l'entité Wish avec make dans l'invite de commande, avec les propriétés demandées  
 •	Mettre à jour la base de données avec doctrine:schema:update –force
 •	Dans WishController, dans la méthode list :   
-    o	Récupérer les idées avec la méthode $repo->findBy()  
-    o	Passer les idées à Twig avec le 2e argument de la fonction render()  
+       o	Récupérer les idées avec la méthode $repo->findBy()  
+       o	Passer les idées à Twig avec le 2e argument de la fonction render()  
     
 •	Dans list.html.twig :  
   o	utiliser une boucle pour afficher les idées une par une  
