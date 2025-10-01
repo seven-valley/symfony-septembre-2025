@@ -15,5 +15,5 @@ _mercredi 24 spetembre_
 
 
 # JOUR 2
-_jeudi 2 octobre_
+_jeudi 2 octobre_  
 **doctrine**  

@@ -68,3 +68,17 @@ $film->setValid(true);
         ]);
     }
 ```
+
+# :five: Afficher un  éléments de la liste
+```php
+ #[Route('/film/{id}', name: 'main_film')]
+    public function film(Film $film): Response
+    {
+        //dd($film); 
+
+        return $this->render('main/film.html.twig', [
+            'titre' => 'Details film :',
+            'film' => $film,
+        ]);
+    }
+```
