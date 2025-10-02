@@ -1,4 +1,12 @@
-# Module 02 - Prise en main de Doctrine
+# Module 05 - Prise en main de Doctrine
+
+## Créer la base de données
+- Créer la base de données dans PhpMyAdmin ou heidi
+- Mofifier le .env
+```
+DATABASE_URL="mysql://root:@127.0.0.1:3306/"
+```
+- commenter la ligne postgre sql
 
 ## :one: Créer une entité
 ```
