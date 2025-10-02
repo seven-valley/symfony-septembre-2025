@@ -1,4 +1,4 @@
-# Module 06 Les formulaire
+# Module 06 Les formulaires
 
 ## :one: Créer un formulaire
 ```
