@@ -1,0 +1,80 @@
+<?php
+
+namespace App\Entity;
+
+use App\Repository\FilmRepository;
+use Doctrine\ORM\Mapping as ORM;
+
+#[ORM\Entity(repositoryClass: FilmRepository::class)]
+class Film
+{
+    #[ORM\Id]
+    #[ORM\GeneratedValue]
+    #[ORM\Column]
+    private ?int $id = null;
+
+    #[ORM\Column(length: 50)]
+    private ?string $titre = null;
+
+    #[ORM\Column(length: 4)]
+    private ?string $annee = null;
+
+    #[ORM\Column(length: 50)]
+    private ?string $realisateur = null;
+
+    #[ORM\Column]
+    private ?bool $isValid = null;
+
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getTitre(): ?string
+    {
+        return $this->titre;
+    }
+
+    public function setTitre(string $titre): static
+    {
+        $this->titre = $titre;
+
+        return $this;
+    }
+
+    public function getAnnee(): ?string
+    {
+        return $this->annee;
+    }
+
+    public function setAnnee(string $annee): static
+    {
+        $this->annee = $annee;
+
+        return $this;
+    }
+
+    public function getRealisateur(): ?string
+    {
+        return $this->realisateur;
+    }
+
+    public function setRealisateur(string $realisateur): static
+    {
+        $this->realisateur = $realisateur;
+
+        return $this;
+    }
+
+    public function isValid(): ?bool
+    {
+        return $this->isValid;
+    }
+
+    public function setIsValid(bool $isValid): static
+    {
+        $this->isValid = $isValid;
+
+        return $this;
+    }
+}

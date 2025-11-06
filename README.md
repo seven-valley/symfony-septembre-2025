@@ -17,3 +17,25 @@ _mercredi 24 spetembre_
 # JOUR 2
 _jeudi 2 octobre_  
 **doctrine**  
+
+# JOUR 3
+composer req apache-pack  
+composer req annotations  
+composer req make  
+composer req twig  
+composer req asset  
+composer req doctrine  
+composer req debug  
+composer req form  
+
+composer req validator
+composer req security-csrf
+
+# JOUR 4
+TP 2 fait ensemble
+
+
+# JOUR 5
+- Bootstrap
+- Ajouter formulaire
+- effacer formulaire

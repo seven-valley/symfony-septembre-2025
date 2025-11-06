@@ -36,11 +36,7 @@ le controller
     {
         $film = new Film();
         $form = $this->createForm(FilmType::class, $film);
-        if ($form->isSubmitted())
-        {
-             $em->persist($wish);
-
-        }
+        
         return $this->render('film/index.html.twig', [
             'form' => $form,
         ]);
