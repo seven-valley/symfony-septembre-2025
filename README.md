@@ -40,3 +40,10 @@ TP 2 fait ensemble
 - Bootstrap
 - Ajouter formulaire
 - effacer formulaire
+
+
+# JOUR 6
+
+- Correction CRUD
+- onetoMany
+
