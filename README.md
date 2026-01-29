@@ -47,3 +47,8 @@ TP 2 fait ensemble
 - Correction CRUD
 - onetoMany
 
+# JOUR 7
+- is_granted
+- security.yml
+
+
