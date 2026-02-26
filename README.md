@@ -51,4 +51,7 @@ TP 2 fait ensemble
 - is_granted
 - security.yml
 
+# JOUR 8
+- CRUD de category
+
 
