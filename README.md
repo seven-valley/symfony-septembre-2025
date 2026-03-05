@@ -54,4 +54,6 @@ TP 2 fait ensemble
 # JOUR 8
 - CRUD de category
 
+# JOUR 9
+team builder partie1
 
